@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  height: 100%;
+
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  height: 1118px;
+  background: #121214
+    radial-gradient(closest-side, hsla(274, 51%, 47%, 1), black);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+
+  z-index: 1;
+}
+
+header {
+  width: 20%;
+  height: 100%;
+  float: right;
+}
+
+.card {
+  background: url('./images/mask.svg');
+  background-color: #202024;
+  width: 358px;
+  height: 560px;
+  text-align: center;
+  color: var(--grey);
+  border-radius: 0.25rem;
+  margin: 50px auto;
+}
+
+.avatar {
+  width: 10rem;
+  margin: 72px auto;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  z-index: 1;
+}
+.avatar > img {
+  margin-top: 73px;
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: -4rem;
+}
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+  align-items: center;
+}
